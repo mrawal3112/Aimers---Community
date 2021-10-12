@@ -10,7 +10,7 @@
 .tweet_footer {
   display: flex;
   justify-content: space-around;
-  margin-top: 10px;
+  margin: 10px 0;
 }
 .verify_icon {
   font-size: 1rem !important;

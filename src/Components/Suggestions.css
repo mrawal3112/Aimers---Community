@@ -1,0 +1,23 @@
+.suggestions {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.suggestions > h3 {
+  margin: 0 1rem;
+}
+.suggestions h5 {
+  color: gray;
+}
+.follow-button {
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+.suggestions:hover {
+  background-color: #e6e6e6;
+}
