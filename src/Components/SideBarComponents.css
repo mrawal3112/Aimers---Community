@@ -1,0 +1,30 @@
+.SideBarComponents {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.SideBarComponents > .MuiSvgIcon-root {
+  padding: 1rem;
+}
+.SideBarComponents > h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-right: 10rem;
+}
+.SideBarComponents:hover {
+  background-color: #e8f5fe;
+  color: var(--Text-Color);
+  border-radius: 2rem;
+  transition: color 100ms ease-out;
+}
+.tweetBtn {
+  background-color: var(--Text-Color) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 900 !important;
+  margin-top: 1.5rem !important;
+}
+.SideBarComponents-active {
+  color: var(--Text-Color);
+}
