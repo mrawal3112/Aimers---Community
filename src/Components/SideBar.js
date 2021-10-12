@@ -11,13 +11,13 @@ import ListAltIcon from '@mui/icons-material/ListAlt';
 import PersonIcon from '@mui/icons-material/Person';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Button from '@mui/material/Button'
-
+import './SideBar.css'
 
 
 const SideBar = () => {
     return (
         <div className='sidebar'>
-            <AlternateEmailIcon />
+            <AlternateEmailIcon className='aimers_icon' />
 
             <SideBarComponents active text='Home' Icon={HomeIcon} />
             <SideBarComponents text='Explore' Icon={ExploreIcon} />

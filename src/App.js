@@ -1,11 +1,13 @@
 import SideBar from "./Components/SideBar";
-
+import NewFeeds from './Components/NewFeeds';
+import Widgets from "./Components/Widgets";
 function App() {
   return (
-    <>
-      <h1>Twitter Clone in making namely Aiimers-Community</h1>
+    <div className='App'>
       <SideBar />
-    </>
+      <NewFeeds />
+      <Widgets />
+    </div>
   );
 }
 

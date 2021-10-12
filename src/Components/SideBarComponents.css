@@ -24,6 +24,9 @@
   color: white !important;
   font-weight: 900 !important;
   margin-top: 1.5rem !important;
+  border-radius: 2rem !important;
+  text-transform: inherit !important;
+  height: 3rem !important;
 }
 .SideBarComponents-active {
   color: var(--Text-Color);

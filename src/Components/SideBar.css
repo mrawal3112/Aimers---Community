@@ -1,0 +1,10 @@
+.aimers_icon {
+  color: var(--Text-Color);
+  margin: 1rem 0 0 1rem;
+  font-size: 2rem !important;
+}
+.sidebar {
+  border-right: 1px solid var(--Background-Color);
+  padding: 0 1rem;
+  flex: 0.3;
+}
