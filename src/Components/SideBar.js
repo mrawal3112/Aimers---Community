@@ -1,6 +1,6 @@
 import React from 'react';
 import './SideBar.css';
-import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import TwitterIcon from '@mui/icons-material/Twitter';
 import SideBarComponents from './SideBarComponents';
 import HomeIcon from '@mui/icons-material/Home';
 import ExploreIcon from '@mui/icons-material/Explore';
@@ -17,7 +17,7 @@ import './SideBar.css'
 const SideBar = () => {
     return (
         <div className='sidebar'>
-            <AlternateEmailIcon className='aimers_icon' />
+            <TwitterIcon className='twitter_icon' />
 
             <SideBarComponents active text='Home' Icon={HomeIcon} />
             <SideBarComponents text='Explore' Icon={ExploreIcon} />

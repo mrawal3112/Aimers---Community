@@ -1,6 +1,5 @@
 import React from 'react';
 import { Avatar } from '@mui/material';
-import logo from '../Images/viratkohli.jpg';
 import './Tweets.css'
 import VerifiedOutlinedIcon from '@mui/icons-material/VerifiedOutlined';
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
@@ -11,22 +10,21 @@ const Tweets = ({ name, username, verified, text, image, avatar }) => {
     return (
         <div className='tweets'>
             <div className='tweet'>
-                <Avatar src={logo} />
+                <Avatar src={avatar} />
             </div>
             <div className="tweet_body">
                 <div className='tweet_header'>
                     <div className='tweet_headerText'>
-                        <h3>Virat kohli{" "}<span><VerifiedOutlinedIcon className='verify_icon' />{" "}<span style={{ color: '#3b3a3a70', fontSize: '1rem' }}>@imVkohli</span></span></h3>
+                        <h3>{name}{" "}<span>{verified && <VerifiedOutlinedIcon className='verify_icon' />}{" "}<span style={{ color: '#3b3a3a70', fontSize: '1rem' }}>{username}</span></span></h3>
                     </div>
                     <div className='tweet_headerDescription'>
                         <p>
-                            Not the result we wanted but I am so proud of the character shown by the boys throughout the tournament.
-                            A disappointing end but we can hold our heads high.
-                            Thank you to all the fans, management and the support staff for your constant support.
+                            {text}
                         </p>
                     </div>
                 </div>
-                <img src='https://pbs.twimg.com/media/FBe2XH7VUAQTxu0?format=jpg&name=360x360' alt='nologo'></img>
+
+                <img src={image} alt=''></img>
 
                 <div className='tweet_footer'>
                     <ChatBubbleOutlineOutlinedIcon fontSize='small' />
