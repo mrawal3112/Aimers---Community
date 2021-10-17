@@ -16,7 +16,7 @@ const Tweets = forwardRef(({ name, username, verified, text, image, avatar }, re
             <div className="tweet_body">
                 <div className='tweet_header'>
                     <div className='tweet_headerText'>
-                        <h3>{name}{" "}<span>{verified && <VerifiedOutlinedIcon className='verify_icon' />}{" "}<span style={{ color: '#3b3a3a70', fontSize: '1rem' }}>{username}</span></span></h3>
+                        <h3>{name}{" "}<span>{verified && <VerifiedOutlinedIcon className='verify_icon' />}{" "}<span style={{ color: '#3b3a3a70', fontSize: '1rem' }}>@{username}</span></span></h3>
                     </div>
                     <div className='tweet_headerDescription'>
                         <p>

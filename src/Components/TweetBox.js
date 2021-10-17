@@ -16,8 +16,8 @@ const TweetBox = () => {
     function sendTweet(e) {
         e.preventDefault();
         db.collection('posts').add({
-            name: "Nikhil Rawal",
-            username: 'nikz_placid',
+            name: "Mohit Rawal",
+            username: 'mohitrawal7500',
             verified: true,
             text: newTweet,
             avatar: 'https://m.media-amazon.com/images/M/MV5BMjc5NTM5NjUyMV5BMl5BanBnXkFtZTgwMDEwMzU1OTE@._V1_UY1200_CR84,0,630,1200_AL_.jpg',
@@ -54,7 +54,8 @@ const TweetBox = () => {
                         <EmojiEmotionsOutlinedIcon className='options' />
                     </div>
                     <div>
-                        <Button type='submit' className='tweetBox_Tweet' variant='outlined' onClick={sendTweet}>Tweet</Button>
+                        {newTweet.length === 0 ? <Button type='submit' className='tweetBox_Tweet' variant='outlined' onClick={sendTweet} disabled style={{ opacity: ".5" }}>Tweet</Button> : <Button type='submit' className='tweetBox_Tweet' variant='outlined' onClick={sendTweet} >Tweet</Button>}
+
                     </div>
                 </div>
             </form>
