@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { Avatar } from '@mui/material';
 import './Tweets.css'
 import VerifiedOutlinedIcon from '@mui/icons-material/VerifiedOutlined';
@@ -6,9 +6,10 @@ import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutline
 import RepeatOutlinedIcon from '@mui/icons-material/RepeatOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import IosShareOutlinedIcon from '@mui/icons-material/IosShareOutlined';
-const Tweets = ({ name, username, verified, text, image, avatar }) => {
+
+const Tweets = forwardRef(({ name, username, verified, text, image, avatar }, ref) => {
     return (
-        <div className='tweets'>
+        <div className='tweets' ref={ref}>
             <div className='tweet'>
                 <Avatar src={avatar} />
             </div>
@@ -24,7 +25,7 @@ const Tweets = ({ name, username, verified, text, image, avatar }) => {
                     </div>
                 </div>
 
-                <img src={image} alt=''></img>
+                <img src={image} alt='' className='displayImage'></img>
 
                 <div className='tweet_footer'>
                     <ChatBubbleOutlineOutlinedIcon fontSize='small' />
@@ -36,6 +37,6 @@ const Tweets = ({ name, username, verified, text, image, avatar }) => {
         </div>
 
     );
-}
+});
 
 export default Tweets;

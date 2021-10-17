@@ -9,7 +9,7 @@ const Widgets = () => {
         <div className='widgets'>
             <div className='widgets_input'>
                 <SearchIcon className='seacrhicon' />
-                <input type='text' placeholder='Search Twitternpm install -g firebase-tools'></input>
+                <input type='text' placeholder='Search Twitter'></input>
             </div>
             <div className='widgets_container'>
                 <h2>What's Happening</h2>

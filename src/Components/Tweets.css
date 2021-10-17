@@ -4,6 +4,9 @@
   border-bottom: 1px solid var(--Background-Color);
   padding: 0.75rem;
 }
+.tweet_body {
+  width: 100%;
+}
 .tweet_body > img {
   border-radius: 20px;
 }
@@ -18,4 +21,8 @@
 }
 .tweet_header {
   padding: 0 0.5rem;
+}
+.displayImage {
+  width: 100%;
+  margin-top: 1rem;
 }

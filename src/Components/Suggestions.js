@@ -12,7 +12,7 @@ const Suggestions = () => {
                 <h3>Shahid Kapoor{" "}<span><VerifiedOutlinedIcon className='verify_icon' />{" "}</span></h3>
                 <h5>@shahidkapoor</h5>
             </div>
-            <a href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw" class="follow-button" data-show-count="false">Follow</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw" className="follow-button" data-show-count="false">Follow</a><script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
         </div>
     );
 }
