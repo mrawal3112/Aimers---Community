@@ -6,7 +6,7 @@ import ImageOutlinedIcon from '@mui/icons-material/ImageOutlined';
 import GifOutlinedIcon from '@mui/icons-material/GifOutlined';
 import PollOutlinedIcon from '@mui/icons-material/PollOutlined';
 import EmojiEmotionsOutlinedIcon from '@mui/icons-material/EmojiEmotionsOutlined';
-import db from './firebase';
+import db from '../firebase';
 
 
 const TweetBox = () => {

@@ -5,7 +5,7 @@ import FeedBox from './TweetBox';
 import Tweets from './Tweets';
 // import logo from '../Images/virat-kohli.jpg'
 // import image from '../Images/ProfilePic.png'
-import db from './firebase';
+import db from '../firebase';
 import FlipMove from 'react-flip-move';
 
 const NewFeeds = () => {
